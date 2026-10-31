@@ -2,12 +2,38 @@ body {
 	background-color: #E6E6FA;
 	color: #191970;
 }
-	h1 {
-		background-color: #191970;
-		color: #E6E6FA; 
-	}
-	h2 { background-color: #AEAED4; 
-	     color: #191970; 
-	}
-	.feature { color: 	#541f1f; }
-	#content {background-color: #F6F6FD; }
+
+h1 {
+	background-color: #191970;
+	color: #E6E6FA;
+}
+
+h2 {
+	background-color: #AEAED4;
+	color: #191970;
+}
+
+.feature {
+	color: #541f1f;
+}
+
+#content {
+	background-color: #F6F6FD;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 130px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
