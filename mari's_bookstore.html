@@ -4,8 +4,10 @@
 <head>
 	<title>bookstore</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="colour.css">
 </head>
-<link rel="stylesheet" href="colour.css">
+
 
 
 <body>
@@ -13,22 +15,55 @@
 		<h1>Welcome To My Bookstore</h1>
 	</header>
 	<nav>
+            <div class="dropdown">
+				<button class="dropbtn">Genres</button>
+				<div class="dropdown-content">
+					<a href="Mystery_page.html"> Mystery </a>&nbsp;
+					<a href="Romance_page.html">Romance</a>&nbsp;
+					<a href="Fiction_page.html">Fiction</a>&nbsp;
+				</div>
 		<b>Wishlist &nbsp; <a href="https://charmingmari.com/" target="_blank">Sister sites</a>
-			<div class="dropdown">
-				  <button class="dropbtn">Genres</button>
-                   <div class="dropdown-content">
-                   <a href="Mystery_page.html"> Mystery </a>&nbsp;
-                   <a href="Romance_page.html">Romance</a>&nbsp;
-                   <a href="Fiction_page.html">Fiction</a>&nbsp;
-				   </div>
+			
 			</div>
 		</b>
 	</nav>
 	<div id="content">
 		<h2>Featured</h2>
 		<p>I am happy when sleep. </p>
+		<div class="slideshow-container">
+			<div class="mySlides2">
+				<img src="Vivy Fluorite Eye's Song.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides2">
+				<img src="Detective conan.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides2">
+				<img src="The Duke of Death and His Maid.jpg" style="width:100%">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+		</div>
 		<hr>
 		<h2>Recomended </h2> <!-- Choose one favourite category and omit the rest -->
+		<div class="slideshow-container">
+			<div class="mySlides1">
+				<img src="Vivy Fluorite Eye's Song.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides1">
+				<img src="Detective conan.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides1">
+				<img src="The Duke of Death and His Maid.jpg" style="width:100%">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+		</div>
 		<ol type="square">
 			<li class="feature">Nasi Lemak</li>
 			<li class="feature">Wanton Mee</li>
@@ -38,6 +73,7 @@
 	<footer>
 		<small><i>Copyright &copy; 2026 mari</i></small> <!-- Add your name -->
 	</footer>
+	<script src="slideshow.js"></script>
 </body>
 
 </html>
